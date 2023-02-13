@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <style>
+        #t, #r{
+            width: 45%;
+            height: 400px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            outline: none;
+            border: 1px solid #f5d7d7;
+            resize: none;
+            padding-right: 5px;
+            border-radius: 5px;
+        }
+        #r{
+            cursor: not-allowed;
+        }
+        ::placeholder {
+            color: #f78383;
+            direction: ltr;
+            font-size: larger;
+        }
+        button{
+            position: fixed;
+            bottom: 25%;
+            font-size: 23px;
+            font-family: tahoma;
+            padding: 10px 40px;
+            color: #2a2a2a;
+            font-weight: bolder;
+            background: #f79c9c;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        /* .parent{
+            position: absolute;
+            right: 50%;
+        } */
+    </style>
+   <div class="parent">
+    <textarea name="t" id="t" spellcheck="true" placeholder="Type here......."></textarea>
+    <button onclick="myCode()">Sort</button>
+    <!-- <div class="myResult"></div>s -->
+    <textarea name="r" id="r" spellcheck="true" placeholder="See result here......" disabled></textarea>
+   </div>
+
+   <script src="sort.js"></script>
+</body>
+</html>
